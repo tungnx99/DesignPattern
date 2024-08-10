@@ -24,7 +24,7 @@ namespace DesignPattern.Controllers.CreationalPatterns
         /// Cons:
         ///     The code may become more complicated than it should be, since a lot of new interfaces and classes are introduced along with the pattern.
         ///     
-        /// Referance:
+        /// Reference:
         ///     https://refactoring.guru/design-patterns/factory-method
         /// </summary>
         private readonly ISenderFactory _senderFactory;
