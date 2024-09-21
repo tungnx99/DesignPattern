@@ -1,4 +1,5 @@
-﻿using Applications.Implement.Services.ExportFiles;
+﻿using Applications.Implement.Services.Configs;
+using Applications.Implement.Services.ExportFiles;
 using Infrastructures.Implement.Services.ExportFiles;
 using Infrastructures.Share.Constants;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +12,8 @@ namespace Applications.Implement
         {
             service.AddKeyedScoped<IExportFileService, PDFFileService>(ExportFileConstant.Pdf);
             service.AddKeyedScoped<IExportFileService, PDFFileV2Service>(ExportFileConstant.PdfV2);
+
+            service.AddScoped<CloudConfigService>();
         }
     }
 }
