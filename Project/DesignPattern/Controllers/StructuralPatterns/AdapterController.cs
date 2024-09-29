@@ -39,7 +39,7 @@
         /// Need start project XMLProject
         /// </summary>
 
-        [HttpGet]
+        [HttpPost]
         public IActionResult GetProduct()
         {
             var products = new List<IProduct>();
